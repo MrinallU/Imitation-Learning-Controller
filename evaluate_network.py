@@ -1,16 +1,4 @@
 #!/usr/bin/env python3
-
-# ─────────── Demo Points ───────────
-# 7, 4
-# 7, 1
-# 5, 3 
-# 5, 4
-# 3,5
-# 4.5,4.5
-
-
- 
-
 WEIGHTS_PATH = 'imit_policy.pth'   
 GOAL_X, GOAL_Y = 6.5,-1       
 EPISODES       = 3                 
