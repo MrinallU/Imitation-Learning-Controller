@@ -1,23 +1,8 @@
 #!/usr/bin/env python3
-"""
-manual_teleop_recorder.py  –  step-wise tele-op & CSV logger
-
-
-ros2 topic echo /odom --field pose.pose.position
-ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py x_pose:=3 y_pose:=3
-
-export TURTLEBOT3_MODEL=waffle_pi
-
-"""
 import sys, termios, tty, select, csv, os, time, argparse, rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
-
-# 
-#
-
-
 
 ACTIONS = [
     (0.00, 0.00), (0.22, 0.00), (0.00, 0.50),
